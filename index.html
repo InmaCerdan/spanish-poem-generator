@@ -3,13 +3,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Spanish poem generator 💃</title>
   </head>
   <body>
     <div class="container">
       <h1>Spanish poem generator 💃</h1>
       <main>
-        <form>
+        <form id="poemForm">
           <input
             type="text"
             placeholder="Enter the topic for the poem"
@@ -19,11 +20,7 @@
           />
           <input type="submit" class="topicButton" />
         </form>
-        <div class="poem">
-          Violets are blue
-          <br />
-          roses are red
-        </div>
+        <div class="poem" id="poemBox"></div>
       </main>
 
       <footer>
